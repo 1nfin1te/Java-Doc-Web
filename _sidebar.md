@@ -1,4 +1,4 @@
-* [文档概述](README.md)
+* [文档概述](.README.md)
 * [修炼之路](./docs/Java%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF.md)
 * [后端基础](./docs/1.基础部分/)
 * [数据库](./docs/2.数据库/)
