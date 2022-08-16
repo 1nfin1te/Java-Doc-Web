@@ -49,13 +49,13 @@
 4. `JVM`、`JDK`、`JRE `都有什么区别？
 5. 什么是面向对象开发，什么是面向过程，二者对比有什么区别？
 6. 面向对象开发的基本原则是什么？（六大原则）
-7. `什么`是数组？数组有哪些特点？
-8. 为什么要有基本数据的包装类？
-9. `Integer` 缓存池有了解过么 ？
-10. `new Integer` 和 `Integer.valueOf()` 之间的区别是什么？
-11. 为什么要使用缓存池？缓存池在什么位置？采用了使用了什么设计模式？
-12. `String` 为什么会比 `StringBuilder` 慢？
-13. `switch` 能否用在`String`上？那么`Long`呢？为什么不支持`Long`？
+7. 为什么要有基本数据的包装类？
+8. `Integer` 缓存池有了解过么 ？
+9. `new Integer` 和 `Integer.valueOf()` 之间的区别是什么？
+10. 为什么要使用缓存池？缓存池在什么位置？采用了使用了什么设计模式？
+11. `switch` 能否用在`String`上？那么`Long`呢？为什么不支持`Long`？
+12. `什么`是数组？数组有哪些特点？
+13. `String` 为什么会比 `StringBuilder` 慢？
 14. 对于 `static` 关键字的理解？
 15. 对于 `final` 关键字的理解？
 16. `try... catch.... finally` 中 ` finally`  使用 `return` 为什么是禁止的 ？
@@ -294,8 +294,8 @@
       7. 遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？
       8. 有什么办法可以监控到 JVM 的实时运行状态？
    2. 常用指令？
-      + trace
-      + watch
+      + trace：统计调用市场
+      + watch：
       + jad
       + stack
 
@@ -1096,37 +1096,45 @@
 
 #### Docker 
 
-1. 什么是Docker ？
-2. 为什么要使用 Docker ？
+1. 什么是`Docker`？
+2. 为什么要使用`Docker`？
 3. 什么是镜像、容器？
-4. Docker容器的四种状态？
-5. 一个完整的Docker由哪些部分组成？
+4. `Docker`容器的四种状态？
+5. 一个完整的`Docker`由哪些部分组成？
 
 #### K8S
 
-1. 什么是 K8s ?
-2. 为什么要选择 K8s 而不是其他 ？
-3. K8s 的生命周期？
-4. Master 节点的组件有哪些？各自的作用？
-5. Node 节点的组件有哪些？各自有什么作用？
-6. 简述创建 Pod 的流程？
-7. 简述删除 Pod 的流程？
-8. K8s 如何进行关机维护？
-9. K8s 如何进行监控？
-10. deployment 升级过程（类似于滚动更新）？
-11. deployment 升级策略有哪些？
-12. DaemonSet 类型的资源特性？
-13. service 三种工作模式 ？
-14. service 的四种类型？
-15. pod 网络模式？
-16. Scheduler如何将 Pod 绑定到 worker 节点（Scheduler 如何为Pod挑选合适的Worker节点）？
-17. 如何保证集群的安全性？
-18. 数据持久化的方式有哪些？
-19. 简述Kubernetes PV和PVC？
-20. Kubernetes PV生命周期内的阶段？
-21. 简述Kubernetes CSI模型？
-22. 简述Kubernetes Worker节点加入集群的过程？
-23. 简述Kubernetes Pod如何实现对节点的资源控制？
+1. 什么是云计算？
+2. 云计算的五个特征
+3. 云服务的模式`Laas`、`Paas`、`SaaS`之间有什么区别？
+4. 什么是云原生？
+5. 为什么要使用云原生？（云原生的特性）
+6. 什么是`VPC`? 应用场景有哪些？
+7. 什么是容器编排？
+8. 什么是 `K8s` ?
+9. 为什么要选择`K8s` 而不是其他 ？
+10. `K8s`带来的表格
+11. `K8s` 的生命周期？
+12. `Master` 节点的组件有哪些？各自的作用？
+13. `Node` 节点的组件有哪些？各自有什么作用？
+14. 简述创建 `Pod` 的流程？
+15. 简述删除 `Pod` 的流程？
+16. `K8s` 如何进行关机维护？
+17. `K8s` 如何进行监控？
+18. `deployment` 升级过程（类似于滚动更新）？
+19. `deployment` 升级策略有哪些？
+20. `DaemonSet` 类型的资源特性？
+21. `service` 三种工作模式 ？
+22. `service` 的四种类型？
+23. `pod` 网络模式？
+24. `Scheduler`如何将 `Pod` 绑定到 `worker` 节点（Scheduler 如何为Pod挑选合适的Worker节点）？
+25. 如何保证集群的安全性？
+26. 数据持久化的方式有哪些？
+27. 简述`Kubernetes PV`和`PVC`？
+28. `Kubernetes PV`生命周期内的阶段？
+29. 简述`Kubernetes CSI`模型？
+30. 简述`Kubernetes Worker`节点加入集群的过程？
+31. 简述`Kubernetes Pod`如何实现对节点的资源控制？
 
 ### 服务网格
 
@@ -1177,30 +1185,32 @@
 
 1. `ArrayList`
 2. `LinkedList`
-3. Vector
-4. Stack
-5. Queue
-6. AQS
-7. String
-8. StringBuilder、StringBuffer
-9. Mybatis
-10. Spring
-11. Spring Boot
-12. Nacos
-13. Ribbon
-14. Feign
-15. Ribbon
-16. Hystrix
+3. `Vector`
+4. `Stack`
+5. `Queue`
+6. `AQS`
+7. `String`
+8. `StringBuilder`、`StringBuffer`
+9. `Mybatis`
+10. `Spring`
+11. `Spring Boot`
+12. `Nacos`
+13. `Ribbon`
+14. `Feign`
+15. `Ribbon`
+16. `Hystrix`
+
+
 
 #  前端部分
 
 ### 基础部分
 
-#### Html
+#### `Html`
 
-#### CSS
+#### `CSS`
 
-#### JS/TS
+#### `JS/TS`
 
 ### UI开发框架
 
@@ -1251,11 +1261,11 @@
 
 3. 立项（项目经理、品管）
 
-4. UI设计
+4. `UI`设计
 
 5. 开发
 
-   - 架构、数据库设计、API文档、MOCK数据、开发、单元测试	
+   - 架构、数据库设计、`API`文档、`MOCK`数据、开发、单元测试	
 
    - 前端
 
@@ -1265,7 +1275,7 @@
 
 7. 项目提测：黑盒白盒、压力测试（`qps`）`  loadrunner`
 
-8. bug修改
+8. `bug`修改
 
 9. 回归测试
 
@@ -1286,11 +1296,11 @@
 5. 媒介开发的执行和监控 ？
 6. 敏捷开发的度量标准？
 
-## OKR
+## `OKR`
 
 1. 为什么会有`OKR`？
-2. O 代表什么？ KR 代表什么？
-3. Smart 原则？
+2. `O` 代表什么？ `KR` 代表什么？
+3. `Smart` 原则？
 4. 如何制定`OKR`？
 5. 大公司与小公司的`OKR` 在执行上有什么不同的作用？
 6. `OKR` 的生命周期？
@@ -1311,7 +1321,7 @@
 5. 项目架构然后进行技术选型
 6. 数据类型
 
-## UML
+## `UML`
 
 1. 用例图：描述用户和实例之间的关系
 2. 类图：描述各个类之间的关系
@@ -1356,7 +1366,7 @@
 2. 大数据有什么特点？
 3. 大数据的三大工作方向？
 
-## Hadoop
+## `Hadoop`
 
 ### 概述
 
