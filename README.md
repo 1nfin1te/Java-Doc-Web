@@ -21,6 +21,21 @@
 
 
 
+## 待完善知识点
+
++ DML DQL DCL DDL
++ MyCat
++ Zipkin
++ Metrics
++ Promtheus
++ Grafana
++ AlterManager
++ ELK
++ HystrixDashboard
++ 欢拓云直播
+
+
+
 
 ## 联系方式
 
