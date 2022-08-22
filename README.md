@@ -19,7 +19,7 @@
 
 [十二张图详解淘宝架构变迁](https://zhuanlan.zhihu.com/p/442552241)
 
-
+[不要重复造轮子](https://zhuanlan.zhihu.com/p/530162228?utm_campaign=shareopn&utm_medium=social&utm_oi=976755020490846208&utm_psn=1544980757659181056&utm_source=wechat_session)
 
 ## 待完善知识点
 
